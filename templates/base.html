@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+    .sidebar {
+      height: 100%; /* Full-height: remove this if you want "auto" height */
+      width: 120px; /* Set the width of the sidebar */
+      position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+      z-index: 1; /* Stay on top */
+      top: 0; /* Stay at the top */
+      left: 7px;
+      overflow-x: hidden; /* Disable horizontal scroll */
+      padding-top: 300px;
+      font-size:23px;
+      font-weight: normal;
+      font-family:Times New Roman;
+    }
+    .bodyWebsite{
+      margin-left: 200px;
+      margin: 50%;
+      padding: 1px 16px;
+      height: 1000px;
+    }
+    body {
+        font-family: Times New Roman;
+        background-color: #212529;
+        color: #F8F9FA;
+    }
+    </style>
+    {% block head %} {% endblock %}
+</head>
+<body>
+    <b style= "font-size:70px;">Saitto</b>
+    <p style= "font-size:30px;">Portfolio</p>
+
+    <div class="sidebar">
+        <a href="https://testedjourneys.pythonanywhere.com/" style = "color:#F8F9FA; text-decoration: none;">Home</a>
+        <a href="https://testedjourneys.pythonanywhere.com/Projects" style = "color:#F8F9FA; text-decoration: none;">Projects</a>
+        <a href="https://testedjourneys.pythonanywhere.com/Games" style = "color:#F8F9FA; text-decoration: none;">Games</a>
+    </div>
+
+    {% block body %} {% endblock %}
+</body>
